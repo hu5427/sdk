@@ -4,7 +4,7 @@
 
 ## 安装 {#section_kjb_1qj_zdb .section}
 
-阿里云Java SDK支持1.6及以上版本的JDK，提供以下两种安装方式：
+阿里云Java SDK支持1.6及以上版本的JDK，您可以通过以下两种安装方式Java SDK：
 
 -   使用Maven\(推荐\)
 
