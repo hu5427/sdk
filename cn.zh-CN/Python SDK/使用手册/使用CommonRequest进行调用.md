@@ -18,7 +18,7 @@ CommonRequest有如下特点：
 
 发起一次CommonRequest请求，您需要获取以下几个参数的值。您可以在[文档中心](https://help.aliyun.com/)各产品的API文档中获取以下参数的值。此外，部分产品也可以通过[OpenAPI Explorer](https://api.aliyun.com/)来获取API的参数信息。
 
--   域名\(domain\)：该产品的通用访问域名。
+-   域名\(domain\)：该产品的服务地址。
 
 -   API版本\(version\)：该API的版本号，格式为YYYY-MM-DD。
 
