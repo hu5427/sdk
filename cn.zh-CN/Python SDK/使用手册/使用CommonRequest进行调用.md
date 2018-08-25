@@ -4,7 +4,7 @@
 
 ## CommonRequest调用特点 {#section_kwk_51k_zdb .section}
 
-CommonRequest有如下特点：
+CommonRequest的特点如下：
 
 1.  轻量：只需Core包即可发起调用，无需下载安装各产品的SDK。
 2.  简便：无需更新SDK即可调用最新发布的API。
