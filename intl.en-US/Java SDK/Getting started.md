@@ -14,18 +14,18 @@ If you use Apache Maven to manage Java projects, you only need to add correspond
 
 The core library must be installed no matter which cloud product to use. For example, you must install both the ECS SDK library and the SDK core library if you want to use ECS resources.
 
-If the version of the core library is 3.5.0 and the version of ECS library is 3.0.0, you must declare these two SDK libraries in the pom.xml file as follows.
+If the version of the core library is 3.7.0 and the version of ECS library is 4.11.0, you must declare these two SDK libraries in the pom.xml file as follows.
 
 ```
 <dependency>
     <groupId>com.aliyun</groupId>
     <artifactId>aliyun-java-sdk-core</artifactId>
-    <version>3.5.0</version>
+    <version>3.7.0</version>
 </dependency>
 <dependency>
     <groupId>com.aliyun</groupId>
     <artifactId>aliyun-java-sdk-ecs</artifactId>
-    <version>3.0.0</version>
+    <version>4.11.0</version>
 </dependency>
 ```
 
