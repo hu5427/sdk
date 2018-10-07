@@ -10,7 +10,8 @@
 
     执行以下命令，通过pip安装SDK。
 
-    ```bash
+    ```
+    
     pip install aliyun-python-sdk-core # 安装阿里云SDK核心库
     pip install aliyun-python-sdk-ecs # 安装管理ECS的库
     pip install aliyun-python-sdk-rds # 安装管理RDS的库
@@ -22,7 +23,7 @@
 
     无执行以下命令，通过GitHub安装Python SDK。
 
-    ```bash
+    ```
     git clone https://github.com/aliyun/aliyun-openapi-python-sdk.git
     # 安装阿里云 SDK 核心库
     cd aliyun-python-sdk-core
@@ -31,6 +32,7 @@
     cd aliyun-python-sdk-ecs
     python setup.py install
     ```
+
 
 ## 设置身份验证凭据 {#section_vjb_1qj_zdb .section}
 
@@ -46,13 +48,13 @@
 |EcsRamRole|在ECS实例上通过EcsRamRole实现免密验证|
 |RsaKeyPair|使用RSA公私钥方式（仅日本站支持）|
 
-本文以AccessKey为例说明如何设置身份凭证。为了保证您的账号安全，建议您使用RAM账号来访问阿里云服务。阿里云账号的AccessKey对拥有的资源有完全的权限。RAM账号由阿里云账号授权创建，仅有对特定资源限定的操作权限。参考[创建AccessKey](https://help.aliyun.com/document_detail/66453.html)创建RAM账号的AccessKey。
+本文以AccessKey为例说明如何设置身份凭证。为了保证您的账号安全，建议您使用RAM账号来访问阿里云服务。阿里云账号的AccessKey对拥有的资源有完全的权限。RAM账号由阿里云账号授权创建，仅有对特定资源限定的操作权限。参考[创建AccessKey](https://www.alibabacloud.com/help/doc-detail/66453.htm)创建RAM账号的AccessKey。
 
 使用AccessKey作为访问凭据，需要在初始化Client时设置。
 
 **说明：** 确保包含AccessKey的代码不会泄漏（例如提交到外部公开的GitHub项目），否则将会危害您的阿里云账号的信息安全。
 
-```py
+```
 client = AcsClient(
    "<access-key-id>", 
    "<access-key-secret>",
@@ -66,7 +68,7 @@ client = AcsClient(
 
 1.  导入相关产品的SDK。
 
-    ```py
+    ```
     from aliyunsdkcore.client import AcsClient
     from aliyunsdkcore.acs_exception.exceptions import ClientException
     from aliyunsdkcore.acs_exception.exceptions import ServerException
@@ -76,7 +78,7 @@ client = AcsClient(
 
 2.  新建一个AcsClient。
 
-    ```py
+    ```
     client = AcsClient(
        "<your-access-key-id>", 
        "<your-access-key-secret>",
@@ -86,7 +88,7 @@ client = AcsClient(
 
 3.  创建Request对象。
 
-    ```py
+    ```
     request = DescribeInstancesRequest.DescribeInstancesRequest()
     request.set_PageSize(10)
     ```
@@ -95,13 +97,12 @@ client = AcsClient(
 
     ```
     DescribeInstancesResponse response;
-    
-    try:
-        response = client.do_action_with_exception(request)
-        for instance in response['Instances']:
-            print instance['PublicIpAddress']
-    except ServerException as e:
-        print e
-    except ClientException as e:
-        print e
+         try:
+            response = client.do_action_with_exception(request)
+            print response
+        except ServerException as e:
+            print e
+        except ClientException as e:
     ```
+
+
