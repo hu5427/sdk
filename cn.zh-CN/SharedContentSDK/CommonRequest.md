@@ -1,10 +1,10 @@
 # CommonRequest {#concept_tsz_tsj_zdb .concept}
 
-当您要调用的某个产品的API没有提供SDK提供，可以采用泛用型的API调用方式（CommonRequest）。使用CommonRequest调用方式可实现任意Open API接口的调用。
+当您要调用的某个产品的API没有提供SDK提供，可以采用泛用型的API调用方式（CommonRequest）。使用CommonRequest调用方式可实现任意接口的调用。
 
 ## CommonRequest调用特点 {#section_alh_zyj_zdb .section}
 
-CommonRequest有如下特点：
+CommonRequest的特点如下：
 
 1.  轻量：只需Core包即可发起调用，无需下载安装各产品的SDK。
 2.  简便：无需更新SDK即可调用最新发布的API。
@@ -18,7 +18,7 @@ CommonRequest有如下特点：
 
 发起一次CommonRequest请求，您需要获取以下几个参数的值。您可以在[文档中心](https://help.aliyun.com/)各产品的API文档中获取以下参数的值。此外，部分产品也可以通过[OpenAPI Explorer](https://api.aliyun.com/)来获取API的参数信息。
 
--   域名\(domain\)：该产品的通用访问域名。
+-   域名\(domain\)：该产品的服务地址。
 
 -   API版本\(version\)：该API的版本号，格式为YYYY-MM-DD。
 
