@@ -35,7 +35,7 @@
 |EcsRamRole|在ECS实例上通过EcsRamRole实现免密验证|
 |RsaKeyPair|使用RSA公私钥方式（仅日本站支持）|
 
-本文以AccessKey为例说明如何设置身份凭证。为了保证您的账号安全，建议您使用RAM账号来访问阿里云服务。阿里云账号的AccessKey对拥有的资源有完全的权限。RAM账号由阿里云账号授权创建，仅有对特定资源限定的操作权限。参考[创建AccessKey](https://help.aliyun.com/document_detail/66453.html)创建RAM账号的AccessKey。
+本文以AccessKey为例说明如何设置身份凭证。为了保证您的账号安全，建议您使用RAM账号来访问阿里云服务。阿里云账号的AccessKey对拥有的资源有完全的权限。RAM账号由阿里云账号授权创建，仅有对特定资源限定的操作权限。参考[创建AccessKey](https://www.alibabacloud.com/help/doc-detail/66453.htm)创建RAM账号的AccessKey。
 
 使用AccessKey作为访问凭据，需要在初始化Client时设置凭证。
 
