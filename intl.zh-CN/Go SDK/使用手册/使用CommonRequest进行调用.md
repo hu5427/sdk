@@ -4,7 +4,7 @@
 
 ## CommonRequest调用特点 {#section_kwk_51k_zdb .section}
 
-CommonRequest有如下特点：
+CommonRequest的特点如下：
 
 1.  轻量：只需Core包即可发起调用，无需下载安装各产品的SDK。
 2.  简便：无需更新SDK即可调用最新发布的API。
@@ -16,9 +16,9 @@ CommonRequest有如下特点：
 
 通常API参数中包含Action参数的是RPC风格，包含PathPattern参数的是RESTful风格。一般情况下，每个产品内，所有API的调用风格是统一的。每个API仅支持特定的一种风格调用，传入错误的标识，可能会调用到其他API，或收到`ApiNotFound`的错误信息。
 
-发起一次CommonRequest请求，您需要获取以下几个参数的值。您可以在[文档中心](https://help.aliyun.com/)各产品的API文档中获取以下参数的值。此外，部分产品也可以通过[OpenAPI Explorer](https://api.aliyun.com/)来获取API的参数信息。
+发起一次CommonRequest请求，您需要获取以下几个参数的值。您可以在[文档中心](https://www.alibabacloud.com/help)各产品的API文档中获取以下参数的值。此外，部分产品也可以通过[OpenAPI Explorer](https://api.aliyun.com/)来获取API的参数信息。
 
--   域名\(domain\)：该产品的通用访问域名。
+-   域名\(domain\)：该产品的服务地址。
 
 -   API版本\(version\)：该API的版本号，格式为YYYY-MM-DD。
 
