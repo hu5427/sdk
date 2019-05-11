@@ -6,20 +6,21 @@
 
 阿里云用户在购买或开通产品后会在阿里云生成订单记录， 订单是瞬时行为，也就是一次业务行为就会产生一笔订单。如下图所示，构成订单的主要因素包括订单基本信息、产品信息、支付信息和业务动作这四部分。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/189693/155745383746979_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/189693/155756196346979_zh-CN.png)
 
-您可以通过阿里云开放的费用中心接口，实现以下需求： 阿里云用户通过 阿里云用户
+您可以通过阿里云开放的费用中心接口，实现以下需求：
 
 -   通过查询订单了解自己下单/开通某产品和时间信息。
 -   通过查询订单了解自己下单/开通某产品费用及支付信息。
 -   通过查询订单详情了解自己下单/开通某产品对应详细信息，比如：产品配置信息，数量和实例ID。
--   通过订单的operator参数查看/审计订单开通RAM账号及对应信息。如果存在已下单但尚未支付的订单，可以通过取消订单接口释放订单。
+-   通过订单的operator参数查看/审计订单开通RAM账号及对应信息。
+-   如果存在已下单但尚未支付的订单，可以通过取消订单接口释放订单。
 
 ## 产品架构 {#section_u22_gea_01s .section}
 
 一个自然人或组织在阿里云可以申请多个阿里云账号，每个阿里云账号可以根据需要创建多个订单，但每一个订单都会对应到一个具体的云产品，具体架构如下图所示：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/189693/155745383746036_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/189693/155756196346036_zh-CN.png)
 
 ## 相关API {#section_i91_tth_ca5 .section}
 
